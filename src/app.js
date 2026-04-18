@@ -1,3 +1,5 @@
+import dns from 'node:dns';
+dns.setServers(['8.8.8.8', '1.1.1.1']);   
 import express from "express";
 import authRoutes from "./routes/authRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
